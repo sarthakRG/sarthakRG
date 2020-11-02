@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="7.759">
+    <testcase classname="Validating StarWars API" name="-&#9;The API should be able to return a list of all the Star Wars characters" time="5.157">
+        <system-out>
+            <![CDATA[Given Get Character request.................................................passed
+When User calls "GetAllCharacter" with get http request.....................passed
+Then the api call is success with status code "200".........................passed
+And "count" in response is "82".............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validating StarWars API" name="-&#9;The API should be able to return the details of a specified Star Wars Character" time="0.768">
+        <system-out>
+            <![CDATA[Given Get special Character request with "Darth Vader"......................passed
+When User calls for request with "GetAllCharacter"..........................passed
+Then the api call for get special character is success with status code "200".passed
+And name in response should be "Darth Vader"................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validating StarWars API" name="-&#9;The API should be able to return a list of all the Star Wars planets" time="0.723">
+        <system-out>
+            <![CDATA[Given Get Planet request....................................................passed
+When User calls "GetAllPlanets" api with get http request method............passed
+Then the api call should be a success with status code "200"................passed
+And "count" of planets in response is "60"..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validating StarWars API" name="-&#9;The API should be able to return the details of a specified Star Wars planet" time="0.657">
+        <system-out>
+            <![CDATA[Given Get special planet request with "Dagobah".............................passed
+When User calls api "GetAllPlanets" to get the desired planet...............passed
+Then the api call for get special planet is success with status code "200"..passed
+And Planet name in response should be "Dagobah".............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

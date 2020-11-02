@@ -1,0 +1,337 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-02T21:32:49.706Z",
+        "line": 4,
+        "name": "-\tThe API should be able to return a list of all the Star Wars characters",
+        "description": "",
+        "id": "validating-starwars-api;--the-api-should-be-able-to-return-a-list-of-all-the-star-wars-characters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1575780800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Get Character request",
+            "match": {
+              "location": "stepDefinations.stepDefination.get_character_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2427620300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"GetAllCharacter\" with get http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetAllCharacter",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinations.stepDefination.user_calls_something_with_get_http_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the api call is success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinations.stepDefination.the_api_call_is_success_with_status_code_something(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1440148900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"count\" in response is \"82\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "count",
+                  "offset": 1
+                },
+                {
+                  "val": "82",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinations.stepDefination.something_in_response_is_something(java.lang.String,int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-02T21:32:55.305Z",
+        "line": 19,
+        "name": "-\tThe API should be able to return the details of a specified Star Wars Character",
+        "description": "",
+        "id": "validating-starwars-api;--the-api-should-be-able-to-return-the-details-of-a-specified-star-wars-character;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7977800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Get special Character request with \"Darth Vader\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Darth Vader",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinations.stepDefination.get_special_character_request_with_something(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 683878300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User calls for request with \"GetAllCharacter\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetAllCharacter",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.stepDefination.user_calls_for_request_with_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the api call for get special character is success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 68
+                }
+              ],
+              "location": "stepDefinations.stepDefination.the_api_call_for_get_special_character_is_success_with_status_code_something(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96741800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "name in response should be \"Darth Vader\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Darth Vader",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.stepDefination.name_in_response_should_be_something(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-02T21:32:56.097Z",
+        "line": 21,
+        "name": "-\tThe API should be able to return a list of all the Star Wars planets",
+        "description": "",
+        "id": "validating-starwars-api;--the-api-should-be-able-to-return-a-list-of-all-the-star-wars-planets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1995500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Get Planet request",
+            "match": {
+              "location": "stepDefinations.stepDefination.get_planet_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 656867600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User calls \"GetAllPlanets\" api with get http request method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetAllPlanets",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinations.stepDefination.user_calls_something_api_with_get_http_request_method(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the api call should be a success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefinations.stepDefination.the_api_call_should_be_a_success_with_status_code_something(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29921000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "\"count\" of planets in response is \"60\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "count",
+                  "offset": 1
+                },
+                {
+                  "val": "60",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinations.stepDefination.something_of_planets_in_response_is_something(java.lang.String,int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-02T21:32:56.797Z",
+        "line": 35,
+        "name": "-\tThe API should be able to return the details of a specified Star Wars planet",
+        "description": "",
+        "id": "validating-starwars-api;--the-api-should-be-able-to-return-the-details-of-a-specified-star-wars-planet;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Get special planet request with \"Dagobah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dagobah",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinations.stepDefination.get_special_planet_request_with_something(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 777932400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User calls api \"GetAllPlanets\" to get the desired planet",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetAllPlanets",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinations.stepDefination.user_calls_api_something_to_get_the_desired_planet(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the api call for get special planet is success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 65
+                }
+              ],
+              "location": "stepDefinations.stepDefination.the_api_call_for_get_special_planet_is_success_with_status_code_something(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20944800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Planet name in response should be \"Dagobah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dagobah",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinations.stepDefination.planet_name_in_response_should_be_something(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validating StarWars API",
+    "description": "",
+    "id": "validating-starwars-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/star.feature",
+    "tags": []
+  }
+]
